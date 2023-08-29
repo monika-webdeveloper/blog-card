@@ -1,0 +1,187 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+
+#home-page {
+  background-color: var(--color-main-background);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 60.8rem;
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 1.6rem 1.6rem 2.2rem 1.6rem;
+  border-radius: var(--border-radius-10);
+  gap: 3.2rem;
+
+  & &__image-container {
+    width: 57.6rem;
+    height: 29.6rem;
+    border-radius: var(--border-radius-10);
+    overflow: hidden;
+  }
+
+  & &__image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  & &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  & &__content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & &__content-image-and-name-container {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+  }
+
+  & &__content-image-and-name-container img {
+    width: 4rem;
+    height: 3.9rem;
+    border-radius: 50%;
+  }
+
+  & &__content-name {
+    font-size: var(--font-size-14);
+    font-weight: 500;
+  }
+
+  & &__content-time {
+    font-size: var(--font-size-14);
+  }
+
+  & &__content-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  & &__content-title {
+    font-size: var(--font-size-24);
+    font-weight: 500;
+  }
+
+  & &__content-desc {
+    color: var(--color-grey-light);
+    font-size: var(--font-size-16);
+    line-height: 140%;
+  }
+
+  &__content-btn {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    text-decoration: none;
+    font-size: var(--font-size-16);
+    line-height: 130%;
+    color: var(--color-black);
+  }
+
+  &__content-btn span {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+}
+
+//////////// ********** ////////////  MEDIA QUERY //////////// ********** ////////////
+
+@media screen and (max-width: 68.5rem) {
+  .card {
+    max-width: 34.3rem;
+    width: 100%;
+    gap: 2.4rem;
+
+    & &__image-container {
+      max-width: 31.1rem;
+      height: 27.3rem;
+      border-radius: var(--border-radius-10);
+      overflow: hidden;
+    }
+
+    & &__content {
+      gap: 2.4rem;
+    }
+
+    & &__content-image-and-name-container img {
+      width: 3.6rem;
+      height: 3.5rem;
+      border-radius: 50%;
+    }
+
+    & &__content-name,
+    & &__content-time {
+      font-size: var(--font-size-12);
+    }
+
+    & &__content-body {
+      gap: 0.8rem;
+    }
+
+    & &__content-title {
+      font-size: var(--font-size-18);
+      font-weight: 500;
+    }
+
+    & &__content-desc {
+      font-size: var(--font-size-14);
+      line-height: 130%;
+      font-weight: 400;
+    }
+
+    &__content-btn {
+      font-size: var(--font-size-14);
+    }
+
+    &__content-btn span {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+}
+//////////// ********** ////////////  MEDIA QUERY //////////// ********** ////////////
+
+@media screen and (max-width: 36.6rem) {
+  .card {
+    max-width: 30rem;
+    width: 100%;
+    gap: 2.4rem;
+
+    & &__image-container {
+      max-width: 26.8rem;
+      height: 27.3rem;
+      border-radius: var(--border-radius-10);
+      overflow: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: 32rem) {
+  .card {
+    max-width: 28rem;
+    width: 100%;
+    gap: 2.4rem;
+
+    & &__image-container {
+      max-width: 24.8rem;
+      height: 27.3rem;
+      border-radius: var(--border-radius-10);
+      overflow: hidden;
+    }
+  }
+}
